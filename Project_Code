@@ -1,0 +1,39 @@
+package project1;
+import java.util.*;
+public class Student_Management_System {
+	public static void main(String[] args) {
+		Student1 st1  = new Student1();
+		st1.stname = "Ravi";
+		st1.rollno = 192312187;
+		st1.dept = "ECE";
+	
+		Student1 st2 = new Student1 ();		
+		st2.stname = "Kiran";
+		st2.rollno =  192312208;
+		st2.dept = "CSE";
+		
+		Student1 st3 = new Student1 ();
+		st3.stname  = "Shiva";
+		st3.rollno  = 192312629;
+		st3.dept   =  "CSE";
+			
+		System.out.println(st1);
+		System.out.println(st2);
+		System.out.println(st3);
+		
+		ArrayList <Student1> list = new ArrayList<>();
+		list.add(st1);
+		list.add(st2);
+		list.add(st3);
+		System.out.println(list);
+}
+}
+class Student1{
+	String stname ;
+	int rollno;
+	String dept;
+	
+	public String toString (){
+		return stname+ " " +rollno+ " "+ dept ;
+	}
+}
